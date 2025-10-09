@@ -10,15 +10,19 @@ function App() {
 
   return (
     <>
-      <ComponenteA 
-      
-      emoji ={miEmoji}
-      titulo="Viajes Aventura"/>
 
-      <ComponenteB 
-      textoBtn={miBoton}/>
+  <div className='box'>
+      <ComponenteA
+        emoji ={miEmoji}
+        titulo="Viajes Aventura"
+      />
+
+      <ComponenteB
+        textoBtn={miBoton}
+        />
+      </div>
     </>
-  )
+  );
 }
 
 export default App
