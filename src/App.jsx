@@ -5,15 +5,18 @@ import ComponenteB from './components/ComponenteB'
 
 function App() {
 
+  const miEmoji = "✈️"
+  const miBoton= "Buscar Destino"
+
   return (
     <>
       <ComponenteA 
       
-      emoji ="✈️"
+      emoji ={miEmoji}
       titulo="Viajes Aventura"/>
-      
+
       <ComponenteB 
-      textoBtn="Buscar Destino"/>
+      textoBtn={miBoton}/>
     </>
   )
 }

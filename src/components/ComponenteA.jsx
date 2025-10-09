@@ -3,7 +3,7 @@ import React from "react";
 const ComponenteA = ({ emoji, titulo }) => {
     return (
         <div className="container">
-            <div>{emoji}</div>
+            <ComponenteC />
             <div>{titulo}</div>
         </div>
     );
