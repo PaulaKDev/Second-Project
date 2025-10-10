@@ -2,8 +2,11 @@ import React from "react";
 
 const ComponenteB = ({ textoBtn}) => {
 
+    const handleClick = () => {
+        alert("Buscando Destino...");
+    };
     return (
-        <button>{textoBtn}</button>
+        <button onClick={handleClick}>{textoBtn}</button>
     );
 
 };
