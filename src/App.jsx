@@ -8,6 +8,10 @@ function App() {
   const miEmoji = "✈️"
   const miBoton= "Buscar Destino"
 
+  const handleClick = () => {
+        alert("Buscando Destino... componente padre");
+    };
+
   return (
     <>
 
@@ -19,6 +23,7 @@ function App() {
 
       <ComponenteB
         textoBtn={miBoton}
+        onClick={handleClick}
         />
       </div>
     </>

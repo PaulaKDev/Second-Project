@@ -1,12 +1,9 @@
 import React from "react";
 
-const ComponenteB = ({ textoBtn}) => {
+const ComponenteB = ({ textoBtn, onClick}) => {
 
-    const handleClick = () => {
-        alert("Buscando Destino...");
-    };
     return (
-        <button onClick={handleClick}>{textoBtn}</button>
+        <button onClick={onClick}>{textoBtn}</button>
     );
 
 };
