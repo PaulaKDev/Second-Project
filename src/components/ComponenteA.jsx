@@ -1,5 +1,5 @@
 import React from "react";
-import ComponenteC from "./Componente C";
+import ComponenteC from "./ComponenteC";
 
 const ComponenteA = ({ emoji, titulo }) => {
 

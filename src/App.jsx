@@ -2,14 +2,17 @@
 import './App.css'
 import ComponenteA from './components/ComponenteA'
 import ComponenteB from './components/ComponenteB'
+import { useState } from 'react'
 
 function App() {
 
   const miEmoji = "✈️"
   const miBoton= "Buscar Destino"
 
+  const [mensaje, setMensaje] = React.useState("Viajes Aventura")
+
   const handleClick = () => {
-        alert("Buscando Destino... componente padre");
+        setMensaje("Listo para viajar!")
     };
 
   return (
@@ -18,7 +21,7 @@ function App() {
   <div className='box'>
       <ComponenteA
         emoji ={miEmoji}
-        titulo="Viajes Aventura"
+        titulo={mensaje}
       />
 
       <ComponenteB
