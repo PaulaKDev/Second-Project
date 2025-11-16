@@ -2,23 +2,109 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-.container{
+  min-height: 100vh;
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
 }
 
-.container div{
-  font-size: 50px;
-}
-.container p{
-  font-size: 20px;
-  padding: 0 30px;
+.app-container {
+  width: 100%;
+  max-width: 600px;
 }
 
-.box{
-  border: solid 1px #000;
-  padding: 30px;
-  background-color:cornsilk;
+.travel-card {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container span {
+  font-size: 4rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.02em;
+}
+
+.travel-button {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #2d3748;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.travel-button:hover {
+  background: #f7fafc;
+  border-color: #f7fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.travel-button:focus {
+  outline: 3px solid #4299e1;
+  outline-offset: 2px;
+}
+
+.travel-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .travel-card {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .container h2 {
+    font-size: 2rem;
+  }
+  
+  .container span {
+    font-size: 3rem;
+  }
+  
+  .travel-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .container span {
+    font-size: 2.5rem;
+  }
 }

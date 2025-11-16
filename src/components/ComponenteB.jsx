@@ -4,6 +4,7 @@ const ComponenteB = ({ textoBtn, onClick }) => {
   return (
     <button
       type="button"
+      className="travel-button"
       onClick={onClick}
       aria-label={textoBtn}
     >

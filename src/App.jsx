@@ -9,15 +9,15 @@ function App() {
 
   const [mensaje, setMensaje] = useState("Viajes Aventura")
 
-  const handleClick = () => setMensaje("Listo para viajar!")
+  const handleClick = () => setMensaje("¡Listo para viajar!")
 
   return (
-    <>
-      <div className='box'>
+    <main className="app-container" role="main">
+      <article className="travel-card">
         <ComponenteA emoji={miEmoji} titulo={mensaje} />
         <ComponenteB textoBtn={miBoton} onClick={handleClick} />
-      </div>
-    </>
+      </article>
+    </main>
   )
 }
 
